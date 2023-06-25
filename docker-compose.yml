@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  web:
+    image: php:apache
+    volumes:
+      - "./formulario:/var/www/html"
+    container_name: controlador1
+    ports:
+      - 8081:80
+
